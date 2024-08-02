@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
 	
-	@Test	
+	@Test(priority = 1)
 	public void verifyLoginWithValidCredentials() {
 		
 		WebDriver driver = new ChromeDriver();
@@ -26,6 +26,28 @@ public class LoginTest {
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		// Ensures that we are at the right page. 
 		driver.quit();		
+	}
+	
+	@Test(priority = 2)
+	public void verifyLoginWithInvalidCredentials() {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.get("http://tutorialsninja.com/demo");
+		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda1@gmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("Selenium@1234");
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		// Understand what's the best way to capture the web element by using either, @id, @class, @name, xpath or 
+		// cssSelector
+		String actualWarningMessage = driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).getText();
+		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Expected warning message is not displayed.");
+		// Ensuring that the warning message is displayed. 
+		driver.quit();
 	}
 
 }
