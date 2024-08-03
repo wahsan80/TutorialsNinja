@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
 	
-	@Test(priority = 1)
+	@Test(priority = 6)
 	public void verifyLoginWithValidCredentials() {
 		
 		WebDriver driver = new ChromeDriver();
@@ -28,7 +28,7 @@ public class LoginTest {
 		driver.quit();		
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 5)
 	public void verifyLoginWithInvalidCredentials() {
 		
 		WebDriver driver = new ChromeDriver();
@@ -49,5 +49,74 @@ public class LoginTest {
 		// Ensuring that the warning message is displayed. 
 		driver.quit();
 	}
-
+	
+	@Test(priority = 1)
+	public void verifyLoginWithNoCredentials() {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.get("http://tutorialsninja.com/demo");
+		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();	
+		driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed();
+		// Checks whether warning message has been displayed or not. 'True' if displayed, 'False' if not.
+		
+		String warningMessage = driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).getText();
+		// Store the warning message text in a String
+		System.out.println(warningMessage); // Just to confirm the text of the warning message by printing it. 
+		
+		driver.quit();
+	}
+	
+	@Test(priority = 2)
+	public void verifyInvalidEmailNoPassword() {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.get("http://tutorialsninja.com/demo");
+		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda1@gmail.com");
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed();
+		driver.quit();
+	}
+	
+	@Test(priority = 3)
+	public void verifyValidEmailNoPassword() {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.get("http://tutorialsninja.com/demo");
+		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda@gmail.com");
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed();
+		driver.quit();
+	}
+	
+	@Test(priority = 4)
+	public void verifyValidEmailInvalidPassword() {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.get("http://tutorialsninja.com/demo");
+		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda@gmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("Selenium@1234");
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed();
+		driver.quit();
+	}
 }
