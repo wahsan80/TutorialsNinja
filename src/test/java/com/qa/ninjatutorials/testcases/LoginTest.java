@@ -1,6 +1,8 @@
 package com.qa.ninjatutorials.testcases;
 
 import java.time.Duration;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -118,5 +120,11 @@ public class LoginTest {
 		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 		driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed();
 		driver.quit();
+	}
+	
+	public void generateDateTimeStamp() {
+		
+		Date date = new Date();	
+		System.out.println(date);
 	}
 }
