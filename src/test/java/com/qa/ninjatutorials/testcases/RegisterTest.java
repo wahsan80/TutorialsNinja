@@ -46,22 +46,48 @@ public class RegisterTest {
 		
 		driver.findElement(By.id("input-firstname")).sendKeys("Selenium");
 		driver.findElement(By.id("input-lastname")).sendKeys("Testing");
-		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting11@gmail.com");
+		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting13@gmail.com");
 		driver.findElement(By.id("input-telephone")).sendKeys("123-456-789");
 		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
 		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
 		driver.findElement(By.xpath("//input[@name = 'newsletter'][@value = '1']")).click();
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		// Assert.assertTrue(driver.findElement(By.xpath("//div[@id = 'content']/h1")).isDisplayed());
+		// Didn't executed as expected. Logical error
 		
 		String accountSuccess = driver.findElement(By.xpath("//div[@id = 'content']/h1")).getText();
-		Assert.assertEquals(accountSuccess, "Your Account Has Been Created!", "Account success message did not appear.");
+		Assert.assertEquals(accountSuccess, "Your Account Has Been Created!", "Account success message did not appear.");		
+	}
+	
+	@Test
+	public void verifyRegistrationWithoutFillingAnyDetails() {
+		
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		
+		Assert.assertTrue(driver.findElement(By.cssSelector("div.alert.alert-danger.alert-dismissible")).isDisplayed());
+		// One way of ensuring the error message
+		System.out.println("First Policy Error Assert");
+		
+		// Another way of confirming the error message by comparison
+		String actualPolicyErrorMessage = driver.findElement(By.xpath("//div[contains(@class, 'alert-dismissible')]")).getText();
+		
+		Assert.assertTrue(actualPolicyErrorMessage.contains(actualPolicyErrorMessage)); // This works
+		System.out.println("2nd Policy Error Assert");
+		
+		Assert.assertTrue(actualPolicyErrorMessage.contains("Warning: You must agree to the Privacy Policy!"), "First Name must be entered.");
+		// This also works. Need to dig deeper. 
+		System.out.println("3rd Policy Error Assert");
+		
+		Assert.assertTrue(driver.findElement(By.xpath("//div[text() = 'First Name must be between 1 and 32 characters!']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//div[text() = 'Last Name must be between 1 and 32 characters!']")).isDisplayed());
+		System.out.println("Testing.");
 	}
 	
 	@AfterMethod
 	public void teardown() {
 		
-		driver.quit();
+		// driver.quit();
 	}
 
 }
