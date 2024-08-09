@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\w_ahs\AppData\Local\Temp\testng-eclipse-196290208\testng-customsuite.xml</span>
+                    <span>C:\Users\w_ahs\AppData\Local\Temp\testng-eclipse--1710876725\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.ninjatutorials.testcases.RegisterTest" class="method navigator-link" hash-for-method="verifyRegistrationWithoutFillingAnyDetails">verifyRegistrationWithoutFillingAnyDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.ninjatutorials.testcases.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithInvalidProduct">verifySearchWithInvalidProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.ninjatutorials.testcases.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithValidProduct">verifySearchWithValidProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.ninjatutorials.testcases.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithoutAnyContent">verifySearchWithoutAnyContent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +132,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.ninjatutorials.testcases.RegisterTest</span>
+              <span class="class-name">com.qa.ninjatutorials.testcases.SearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyRegistrationWithoutFillingAnyDetails">
-                  </a> <!-- verifyRegistrationWithoutFillingAnyDetails -->
-                  <span class="method-name">verifyRegistrationWithoutFillingAnyDetails</span>
+                  <a name="verifySearchWithInvalidProduct">
+                  </a> <!-- verifySearchWithInvalidProduct -->
+                  <span class="method-name">verifySearchWithInvalidProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithValidProduct">
+                  </a> <!-- verifySearchWithValidProduct -->
+                  <span class="method-name">verifySearchWithValidProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchWithoutAnyContent">
+                  </a> <!-- verifySearchWithoutAnyContent -->
+                  <span class="method-name">verifySearchWithoutAnyContent</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\w_ahs\AppData\Local\Temp\testng-eclipse-196290208\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\w_ahs\AppData\Local\Temp\testng-eclipse--1710876725\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.ninjatutorials.testcases.RegisterTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyRegistrationWithoutFillingAnyDetails&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.qa.ninjatutorials.testcases.RegisterTest --&gt;
+      &lt;class name=&quot;com.qa.ninjatutorials.testcases.SearchTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,16 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyRegistrationWithoutFillingAnyDetails')
-data.setCell(0, 2, 'com.qa.ninjatutorials.testcases.RegisterTest')
-data.setCell(0, 3, 591);
+data.setCell(0, 1, 'verifySearchWithInvalidProduct')
+data.setCell(0, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
+data.setCell(0, 3, 1166);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySearchWithValidProduct')
+data.setCell(1, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
+data.setCell(1, 3, 817);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySearchWithoutAnyContent')
+data.setCell(2, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
+data.setCell(2, 3, 508);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 591 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,18 +242,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.ninjatutorials.testcases.RegisterTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyRegistrationWithAllFields</span>
-                <br/>
-                <span class="ignored-method-name">verifyRegistrationWithMandatoryFields</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -234,18 +253,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.ninjatutorials.testcases.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.ninjatutorials.testcases.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyRegistrationWithoutFillingAnyDetails</span>
-                <span class="method-start">5910 ms</span>
+                <span class="method-name">verifySearchWithoutAnyContent</span>
+                <span class="method-start">4878 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">6501 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5389 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithInvalidProduct</span>
+                <span class="method-start">9866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11033 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchWithValidProduct</span>
+                <span class="method-start">15380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16198 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

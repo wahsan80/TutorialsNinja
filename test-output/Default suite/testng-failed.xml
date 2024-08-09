@@ -6,8 +6,8 @@
       <class name="com.qa.ninjatutorials.testcases.RegisterTest">
         <methods>
           <include name="setup"/>
+          <include name="verifyRegistrationWithAllFields"/>
           <include name="teardown"/>
-          <include name="verifyRegistrationWithoutFillingAnyDetails"/>
         </methods>
       </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
     </classes>

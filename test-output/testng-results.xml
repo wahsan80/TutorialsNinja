@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-07T10:24:15 EDT" name="Default suite" finished-at="2024-08-07T10:24:21 EDT" duration-ms="6534">
+  <suite started-at="2024-08-09T11:02:13 EDT" name="Default suite" finished-at="2024-08-09T11:02:30 EDT" duration-ms="16566">
     <groups>
     </groups>
-    <test started-at="2024-08-07T10:24:15 EDT" name="Default test" finished-at="2024-08-07T10:24:21 EDT" duration-ms="6534">
-      <class name="com.qa.ninjatutorials.testcases.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@60bd273d]" started-at="2024-08-07T10:24:15 EDT" name="setup" finished-at="2024-08-07T10:24:21 EDT" duration-ms="5909" status="PASS">
+    <test started-at="2024-08-09T11:02:13 EDT" name="Default test" finished-at="2024-08-09T11:02:30 EDT" duration-ms="16566">
+      <class name="com.qa.ninjatutorials.testcases.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:13 EDT" name="setUp" finished-at="2024-08-09T11:02:18 EDT" duration-ms="4877" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyRegistrationWithoutFillingAnyDetails()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@60bd273d]" started-at="2024-08-07T10:24:21 EDT" name="verifyRegistrationWithoutFillingAnyDetails" finished-at="2024-08-07T10:24:21 EDT" duration-ms="591" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchWithoutAnyContent()[pri:1, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:18 EDT" name="verifySearchWithoutAnyContent" finished-at="2024-08-09T11:02:18 EDT" duration-ms="508" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistrationWithoutFillingAnyDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@60bd273d]" started-at="2024-08-07T10:24:21 EDT" name="teardown" finished-at="2024-08-07T10:24:21 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- verifySearchWithoutAnyContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:18 EDT" name="tearDown" finished-at="2024-08-09T11:02:19 EDT" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:19 EDT" name="setUp" finished-at="2024-08-09T11:02:23 EDT" duration-ms="4176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:23 EDT" name="verifySearchWithInvalidProduct" finished-at="2024-08-09T11:02:24 EDT" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:24 EDT" name="tearDown" finished-at="2024-08-09T11:02:24 EDT" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:24 EDT" name="setUp" finished-at="2024-08-09T11:02:28 EDT" duration-ms="4033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchWithValidProduct()[pri:3, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:28 EDT" name="verifySearchWithValidProduct" finished-at="2024-08-09T11:02:29 EDT" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-09T11:02:29 EDT" name="tearDown" finished-at="2024-08-09T11:02:30 EDT" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ninjatutorials.testcases.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
