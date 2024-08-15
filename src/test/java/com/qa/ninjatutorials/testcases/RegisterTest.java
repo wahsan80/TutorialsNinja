@@ -59,7 +59,7 @@ public class RegisterTest {
 		
 		driver.findElement(By.id("input-firstname")).sendKeys("Selenium");
 		driver.findElement(By.id("input-lastname")).sendKeys("Testing");
-		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting8@gmail.com");
+		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting10@gmail.com");
 		driver.findElement(By.id("input-telephone")).sendKeys("123-456-789");
 		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
 		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
@@ -74,7 +74,7 @@ public class RegisterTest {
 		
 		driver.findElement(By.id("input-firstname")).sendKeys("Selenium");
 		driver.findElement(By.id("input-lastname")).sendKeys("Testing");
-		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting17@gmail.com");
+		driver.findElement(By.id("input-email")).sendKeys("seleniumtesting19@gmail.com");
 		driver.findElement(By.id("input-telephone")).sendKeys("123-456-789");
 		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
 		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");

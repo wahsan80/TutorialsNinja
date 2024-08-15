@@ -41,6 +41,6 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Utilities.PAGELOAD_TIME));
 		driver.get(prop.getProperty("url"));
 		
-		return driver;
-	}
+		return driver; 
+	} 
 }
