@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>NinjaTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 15 09:46:16 EDT 2024</td>
+<td>Started on:</td><td>Thu Aug 15 09:59:57 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74896 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72513 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: Expected warning message is not displayed. expected [true] but found [false]
-	at com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:50)
+<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields()'><b>verifyRegistrationWithMandatoryFields</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
+	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields(RegisterTest.java:69)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846345504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1846345504'><pre>java.lang.AssertionError: Expected warning message is not displayed. expected [true] but found [false]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1351247295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1351247295'><pre>java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:50)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields(RegisterTest.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,8 +116,52 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>5</td>
-<td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
+<td>1</td>
+<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
+<tr>
+<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields()'><b>verifyRegistrationWithAllFields</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
+<td><div><pre>java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
+	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields(RegisterTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985280051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985280051'><pre>java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields(RegisterTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,47 +171,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithoutFillingAnyDetails()'><b>verifyRegistrationWithoutFillingAnyDetails</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
-<tr>
-<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyValidEmailInvalidPassword()'><b>verifyValidEmailInvalidPassword</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
-<td></td>
-<td>6</td>
-<td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
-<tr>
 <td title='com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithNoCredentials()'><b>verifyLoginWithNoCredentials</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
 <td></td>
 <td>6</td>
 <td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
 <tr>
-<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields()'><b>verifyRegistrationWithAllFields</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
-<td></td>
-<td>2</td>
-<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
-<tr>
-<td title='com.qa.ninjatutorials.testcases.SearchTest.verifySearchWithoutAnyContent()'><b>verifySearchWithoutAnyContent</b><br>Test class: com.qa.ninjatutorials.testcases.SearchTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.ninjatutorials.testcases.SearchTest@7674f035</td></tr>
-<tr>
-<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
+<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
 <td></td>
 <td>6</td>
 <td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
 <tr>
-<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields()'><b>verifyRegistrationWithMandatoryFields</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
-<td></td>
-<td>2</td>
-<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
-<tr>
 <td title='com.qa.ninjatutorials.testcases.SearchTest.verifySearchWithInvalidProduct()'><b>verifySearchWithInvalidProduct</b><br>Test class: com.qa.ninjatutorials.testcases.SearchTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.ninjatutorials.testcases.SearchTest@7674f035</td></tr>
-<tr>
-<td title='com.qa.ninjatutorials.testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.qa.ninjatutorials.testcases.SearchTest</td>
 <td></td>
 <td>0</td>
 <td>com.qa.ninjatutorials.testcases.SearchTest@7674f035</td></tr>
@@ -175,7 +191,32 @@ function toggleAllBoxes() {
 <td>6</td>
 <td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
 <tr>
+<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
+<td></td>
+<td>6</td>
+<td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
+<tr>
+<td title='com.qa.ninjatutorials.testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.qa.ninjatutorials.testcases.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.ninjatutorials.testcases.SearchTest@7674f035</td></tr>
+<tr>
+<td title='com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithoutFillingAnyDetails()'><b>verifyRegistrationWithoutFillingAnyDetails</b><br>Test class: com.qa.ninjatutorials.testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.ninjatutorials.testcases.RegisterTest@1a942c18</td></tr>
+<tr>
+<td title='com.qa.ninjatutorials.testcases.SearchTest.verifySearchWithoutAnyContent()'><b>verifySearchWithoutAnyContent</b><br>Test class: com.qa.ninjatutorials.testcases.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.ninjatutorials.testcases.SearchTest@7674f035</td></tr>
+<tr>
 <td title='com.qa.ninjatutorials.testcases.LoginTest.verifyInvalidEmailNoPassword()'><b>verifyInvalidEmailNoPassword</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>
+<tr>
+<td title='com.qa.ninjatutorials.testcases.LoginTest.verifyValidEmailInvalidPassword()'><b>verifyValidEmailInvalidPassword</b><br>Test class: com.qa.ninjatutorials.testcases.LoginTest</td>
 <td></td>
 <td>5</td>
 <td>com.qa.ninjatutorials.testcases.LoginTest@2e3967ea</td></tr>

@@ -3,11 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="NinjaTest(failed)">
     <classes>
-      <class name="com.qa.ninjatutorials.testcases.LoginTest">
+      <class name="com.qa.ninjatutorials.testcases.RegisterTest">
         <methods>
-          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="setup"/>
+          <include name="verifyRegistrationWithAllFields"/>
+          <include name="teardown"/>
+          <include name="verifyRegistrationWithMandatoryFields"/>
         </methods>
-      </class> <!-- com.qa.ninjatutorials.testcases.LoginTest -->
+      </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
     </classes>
   </test> <!-- NinjaTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

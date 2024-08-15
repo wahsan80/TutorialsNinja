@@ -40,7 +40,7 @@ public class LoginTest {
 		driver.get("http://tutorialsninja.com/demo");
 		driver.findElement(By.xpath("//span[text() = 'My Account']")).click();
 		driver.findElement(By.linkText("Login")).click();
-		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda1@gmail.com");
+		driver.findElement(By.id("input-email")).sendKeys("seleniumpanda2@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("Selenium@1234");
 		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 		// Understand what's the best way to capture the web element by using either, @id, @class, @name, xpath or 
