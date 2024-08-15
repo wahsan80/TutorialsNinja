@@ -1,199 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-15T09:59:57 EDT" name="Suite" finished-at="2024-08-15T10:01:09 EDT" duration-ms="72513">
+  <suite started-at="2024-08-15T10:39:36 EDT" name="Default suite" finished-at="2024-08-15T10:39:53 EDT" duration-ms="17378">
     <groups>
     </groups>
-    <test started-at="2024-08-15T09:59:57 EDT" name="NinjaTest" finished-at="2024-08-15T10:01:09 EDT" duration-ms="72513">
+    <test started-at="2024-08-15T10:39:36 EDT" name="Default test" finished-at="2024-08-15T10:39:53 EDT" duration-ms="17378">
       <class name="com.qa.ninjatutorials.testcases.SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:00:54 EDT" name="setUp" finished-at="2024-08-15T10:00:58 EDT" duration-ms="4039" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:36 EDT" name="setUp" finished-at="2024-08-15T10:39:41 EDT" duration-ms="5161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchWithoutAnyContent()[pri:1, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:00:58 EDT" name="verifySearchWithoutAnyContent" finished-at="2024-08-15T10:00:58 EDT" duration-ms="466" status="PASS">
+        <test-method signature="verifySearchWithoutAnyContent()[pri:1, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:41 EDT" name="verifySearchWithoutAnyContent" finished-at="2024-08-15T10:39:41 EDT" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithoutAnyContent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:00:58 EDT" name="tearDown" finished-at="2024-08-15T10:00:59 EDT" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:41 EDT" name="tearDown" finished-at="2024-08-15T10:39:42 EDT" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:00:59 EDT" name="setUp" finished-at="2024-08-15T10:01:03 EDT" duration-ms="4214" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:42 EDT" name="setUp" finished-at="2024-08-15T10:39:46 EDT" duration-ms="4261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:01:03 EDT" name="verifySearchWithInvalidProduct" finished-at="2024-08-15T10:01:03 EDT" duration-ms="607" status="PASS">
+        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:46 EDT" name="verifySearchWithInvalidProduct" finished-at="2024-08-15T10:39:47 EDT" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithInvalidProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:01:03 EDT" name="tearDown" finished-at="2024-08-15T10:01:04 EDT" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:47 EDT" name="tearDown" finished-at="2024-08-15T10:39:47 EDT" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:01:04 EDT" name="setUp" finished-at="2024-08-15T10:01:08 EDT" duration-ms="4402" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:47 EDT" name="setUp" finished-at="2024-08-15T10:39:52 EDT" duration-ms="4643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchWithValidProduct()[pri:3, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:01:08 EDT" name="verifySearchWithValidProduct" finished-at="2024-08-15T10:01:09 EDT" duration-ms="903" status="PASS">
+        <test-method signature="verifySearchWithValidProduct()[pri:3, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:52 EDT" name="verifySearchWithValidProduct" finished-at="2024-08-15T10:39:53 EDT" duration-ms="937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithValidProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@7674f035]" started-at="2024-08-15T10:01:09 EDT" name="tearDown" finished-at="2024-08-15T10:01:09 EDT" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@3f6f6701]" started-at="2024-08-15T10:39:53 EDT" name="tearDown" finished-at="2024-08-15T10:39:53 EDT" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.ninjatutorials.testcases.SearchTest -->
-      <class name="com.qa.ninjatutorials.testcases.LoginTest">
-        <test-method signature="verifyLoginWithNoCredentials()[pri:1, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T09:59:57 EDT" name="verifyLoginWithNoCredentials" finished-at="2024-08-15T10:00:03 EDT" duration-ms="6530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNoCredentials -->
-        <test-method signature="verifyInvalidEmailNoPassword()[pri:2, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T10:00:03 EDT" name="verifyInvalidEmailNoPassword" finished-at="2024-08-15T10:00:09 EDT" duration-ms="5798" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidEmailNoPassword -->
-        <test-method signature="verifyValidEmailNoPassword()[pri:3, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T10:00:09 EDT" name="verifyValidEmailNoPassword" finished-at="2024-08-15T10:00:15 EDT" duration-ms="6020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidEmailNoPassword -->
-        <test-method signature="verifyValidEmailInvalidPassword()[pri:4, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T10:00:15 EDT" name="verifyValidEmailInvalidPassword" finished-at="2024-08-15T10:00:21 EDT" duration-ms="5825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidEmailInvalidPassword -->
-        <test-method signature="verifyLoginWithInvalidCredentials()[pri:5, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T10:00:21 EDT" name="verifyLoginWithInvalidCredentials" finished-at="2024-08-15T10:00:27 EDT" duration-ms="6084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidCredentials -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:6, instance:com.qa.ninjatutorials.testcases.LoginTest@2e3967ea]" started-at="2024-08-15T10:00:27 EDT" name="verifyLoginWithValidCredentials" finished-at="2024-08-15T10:00:34 EDT" duration-ms="6616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-      </class> <!-- com.qa.ninjatutorials.testcases.LoginTest -->
-      <class name="com.qa.ninjatutorials.testcases.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:34 EDT" name="setup" finished-at="2024-08-15T10:00:39 EDT" duration-ms="5099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyRegistrationWithoutFillingAnyDetails()[pri:1, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:39 EDT" name="verifyRegistrationWithoutFillingAnyDetails" finished-at="2024-08-15T10:00:40 EDT" duration-ms="731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistrationWithoutFillingAnyDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:40 EDT" name="teardown" finished-at="2024-08-15T10:00:40 EDT" duration-ms="338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:40 EDT" name="setup" finished-at="2024-08-15T10:00:45 EDT" duration-ms="5316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyRegistrationWithMandatoryFields()[pri:2, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:45 EDT" name="verifyRegistrationWithMandatoryFields" finished-at="2024-08-15T10:00:47 EDT" duration-ms="1343" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields(RegisterTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistrationWithMandatoryFields -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:47 EDT" name="teardown" finished-at="2024-08-15T10:00:47 EDT" duration-ms="329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:47 EDT" name="setup" finished-at="2024-08-15T10:00:52 EDT" duration-ms="4925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyRegistrationWithAllFields()[pri:3, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:52 EDT" name="verifyRegistrationWithAllFields" finished-at="2024-08-15T10:00:54 EDT" duration-ms="1710" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields(RegisterTest.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistrationWithAllFields -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@1a942c18]" started-at="2024-08-15T10:00:54 EDT" name="teardown" finished-at="2024-08-15T10:00:54 EDT" duration-ms="296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
-    </test> <!-- NinjaTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
