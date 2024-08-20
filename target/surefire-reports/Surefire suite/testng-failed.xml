@@ -3,34 +3,14 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="com.qa.ninjatutorials.testcases.SearchTest">
-        <methods>
-          <include name="verifySearchWithValidProduct"/>
-          <include name="verifySearchWithoutAnyContent"/>
-          <include name="verifySearchWithInvalidProduct"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.ninjatutorials.testcases.SearchTest -->
       <class name="com.qa.ninjatutorials.testcases.RegisterTest">
         <methods>
           <include name="setup"/>
           <include name="verifyRegistrationWithAllFields"/>
           <include name="teardown"/>
           <include name="verifyRegistrationWithMandatoryFields"/>
-          <include name="verifyRegistrationWithoutFillingAnyDetails"/>
         </methods>
       </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
-      <class name="com.qa.ninjatutorials.testcases.LoginTest">
-        <methods>
-          <include name="verifyInvalidEmailNoPassword"/>
-          <include name="verifyValidEmailNoPassword"/>
-          <include name="verifyLoginWithNoCredentials"/>
-          <include name="verifyLoginWithValidCredentials"/>
-          <include name="verifyValidEmailInvalidPassword"/>
-          <include name="verifyLoginWithInvalidCredentials"/>
-        </methods>
-      </class> <!-- com.qa.ninjatutorials.testcases.LoginTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
