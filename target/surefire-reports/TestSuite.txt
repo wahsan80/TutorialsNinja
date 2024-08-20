@@ -1,36 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 8, Errors: 0, Skipped: 16, Time elapsed: 14.134 s <<< FAILURE! - in TestSuite
-verifyLoginWithNoCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 2.187 s  <<< FAILURE!
+Tests run: 24, Failures: 8, Errors: 0, Skipped: 16, Time elapsed: 13.927 s <<< FAILURE! - in TestSuite
+verifyLoginWithNoCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 2.3 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithNoCredentials(LoginTest.java:58)
 
-verifyInvalidEmailNoPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.568 s  <<< FAILURE!
+verifyInvalidEmailNoPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.51 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyInvalidEmailNoPassword(LoginTest.java:79)
 
-verifyValidEmailNoPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.564 s  <<< FAILURE!
+verifyValidEmailNoPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.549 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyValidEmailNoPassword(LoginTest.java:95)
 
-verifyValidEmailInvalidPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.634 s  <<< FAILURE!
+verifyValidEmailInvalidPassword(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.442 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyValidEmailInvalidPassword(LoginTest.java:111)
 
-verifyLoginWithInvalidCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.401 s  <<< FAILURE!
+verifyLoginWithInvalidCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.467 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithInvalidCredentials(LoginTest.java:36)
 
-verifyLoginWithValidCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.599 s  <<< FAILURE!
+verifyLoginWithValidCredentials(com.qa.ninjatutorials.testcases.LoginTest)  Time elapsed: 1.552 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:17)
 
-setup(com.qa.ninjatutorials.testcases.RegisterTest)  Time elapsed: 3.217 s  <<< FAILURE!
+setup(com.qa.ninjatutorials.testcases.RegisterTest)  Time elapsed: 3.193 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.RegisterTest.setup(RegisterTest.java:20)
 
-setUp(com.qa.ninjatutorials.testcases.SearchTest)  Time elapsed: 1.67 s  <<< FAILURE!
+setUp(com.qa.ninjatutorials.testcases.SearchTest)  Time elapsed: 1.651 s  <<< FAILURE!
 java.lang.IllegalStateException: The path to the driver executable Unable to locate the chromedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 	at com.qa.ninjatutorials.testcases.SearchTest.setUp(SearchTest.java:20)
 
