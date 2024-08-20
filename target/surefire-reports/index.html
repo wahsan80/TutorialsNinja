@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.ninjatutorials.testcases.RegisterTest" hash-for-method="verifyRegistrationWithAllFields">verifyRegistrationWithAllFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.ninjatutorials.testcases.RegisterTest" hash-for-method="verifyRegistrationWithMandatoryFields">verifyRegistrationWithMandatoryFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -139,6 +120,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.ninjatutorials.testcases.LoginTest" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.ninjatutorials.testcases.RegisterTest" hash-for-method="verifyRegistrationWithAllFields">verifyRegistrationWithAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qa.ninjatutorials.testcases.RegisterTest" hash-for-method="verifyRegistrationWithMandatoryFields">verifyRegistrationWithMandatoryFields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -183,38 +174,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.ninjatutorials.testcases.RegisterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRegistrationWithAllFields">
-                  </a> <!-- verifyRegistrationWithAllFields -->
-                  <span class="method-name">verifyRegistrationWithAllFields</span>
-                  <div class="stack-trace">java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields(RegisterTest.java:88)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRegistrationWithMandatoryFields">
-                  </a> <!-- verifyRegistrationWithMandatoryFields -->
-                  <span class="method-name">verifyRegistrationWithMandatoryFields</span>
-                  <div class="stack-trace">java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields(RegisterTest.java:69)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -271,6 +230,20 @@
               <span class="class-name">com.qa.ninjatutorials.testcases.RegisterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithAllFields">
+                  </a> <!-- verifyRegistrationWithAllFields -->
+                  <span class="method-name">verifyRegistrationWithAllFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithMandatoryFields">
+                  </a> <!-- verifyRegistrationWithMandatoryFields -->
+                  <span class="method-name">verifyRegistrationWithMandatoryFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyRegistrationWithoutFillingAnyDetails">
@@ -367,56 +340,56 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginWithNoCredentials')
 data.setCell(0, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(0, 3, 11235);
+data.setCell(0, 3, 9107);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginWithValidCredentials')
+data.setCell(1, 1, 'verifyValidEmailNoPassword')
 data.setCell(1, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(1, 3, 7082);
+data.setCell(1, 3, 6801);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyValidEmailInvalidPassword')
+data.setCell(2, 1, 'verifyLoginWithValidCredentials')
 data.setCell(2, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(2, 3, 6748);
+data.setCell(2, 3, 6683);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginWithInvalidCredentials')
+data.setCell(3, 1, 'verifyInvalidEmailNoPassword')
 data.setCell(3, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(3, 3, 6568);
+data.setCell(3, 3, 6683);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyInvalidEmailNoPassword')
+data.setCell(4, 1, 'verifyValidEmailInvalidPassword')
 data.setCell(4, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(4, 3, 6515);
+data.setCell(4, 3, 6620);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyValidEmailNoPassword')
+data.setCell(5, 1, 'verifyLoginWithInvalidCredentials')
 data.setCell(5, 2, 'com.qa.ninjatutorials.testcases.LoginTest')
-data.setCell(5, 3, 6434);
+data.setCell(5, 3, 6513);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyRegistrationWithAllFields')
 data.setCell(6, 2, 'com.qa.ninjatutorials.testcases.RegisterTest')
-data.setCell(6, 3, 1730);
+data.setCell(6, 3, 2267);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyRegistrationWithMandatoryFields')
 data.setCell(7, 2, 'com.qa.ninjatutorials.testcases.RegisterTest')
-data.setCell(7, 3, 1212);
+data.setCell(7, 3, 1644);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifySearchWithValidProduct')
 data.setCell(8, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
-data.setCell(8, 3, 880);
+data.setCell(8, 3, 941);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyRegistrationWithoutFillingAnyDetails')
 data.setCell(9, 2, 'com.qa.ninjatutorials.testcases.RegisterTest')
-data.setCell(9, 3, 818);
+data.setCell(9, 3, 856);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifySearchWithInvalidProduct')
 data.setCell(10, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
-data.setCell(10, 3, 569);
+data.setCell(10, 3, 680);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifySearchWithoutAnyContent')
 data.setCell(11, 2, 'com.qa.ninjatutorials.testcases.SearchTest')
-data.setCell(11, 3, 508);
+data.setCell(11, 3, 539);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -449,105 +422,101 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidEmailNoPassword</span>
-                <span class="method-start">11235 ms</span>
+                <span class="method-start">9107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyValidEmailNoPassword</span>
-                <span class="method-start">17751 ms</span>
+                <span class="method-start">15790 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyValidEmailInvalidPassword</span>
-                <span class="method-start">24185 ms</span>
+                <span class="method-start">22591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidCredentials</span>
-                <span class="method-start">30935 ms</span>
+                <span class="method-start">29212 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredentials</span>
-                <span class="method-start">37503 ms</span>
+                <span class="method-start">35725 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.ninjatutorials.testcases.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">44586 ms</span>
+                <span class="method-start">42408 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegistrationWithoutFillingAnyDetails</span>
-                <span class="method-start">54621 ms</span>
+                <span class="method-start">48207 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">55439 ms</span>
+                <span class="method-start">49063 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">56286 ms</span>
+                <span class="method-start">49797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyRegistrationWithMandatoryFields</span>
-                <span class="method-start">61959 ms</span>
+                <span class="method-start">54732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">63184 ms</span>
+                <span class="method-start">56376 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">64037 ms</span>
+                <span class="method-start">57142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyRegistrationWithAllFields</span>
-                <span class="method-start">69024 ms</span>
+                <span class="method-start">62259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">70754 ms</span>
+                <span class="method-start">64526 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.ninjatutorials.testcases.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">71603 ms</span>
+                <span class="method-start">65325 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchWithoutAnyContent</span>
-                <span class="method-start">76029 ms</span>
+                <span class="method-start">69746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76537 ms</span>
+                <span class="method-start">70285 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">77321 ms</span>
+                <span class="method-start">70993 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchWithInvalidProduct</span>
-                <span class="method-start">81548 ms</span>
+                <span class="method-start">75680 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">82118 ms</span>
+                <span class="method-start">76361 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">83020 ms</span>
+                <span class="method-start">77143 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchWithValidProduct</span>
-                <span class="method-start">87307 ms</span>
+                <span class="method-start">81586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88188 ms</span>
+                <span class="method-start">82527 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

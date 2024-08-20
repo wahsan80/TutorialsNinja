@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 89.854 s <<< FAILURE! - in TestSuite
-verifyRegistrationWithMandatoryFields(com.qa.ninjatutorials.testcases.RegisterTest)  Time elapsed: 1.226 s  <<< FAILURE!
-java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithMandatoryFields(RegisterTest.java:69)
-
-verifyRegistrationWithAllFields(com.qa.ninjatutorials.testcases.RegisterTest)  Time elapsed: 1.73 s  <<< FAILURE!
-java.lang.AssertionError: Account success message did not appear. expected [Your Account Has Been Created!] but found [Register Account]
-	at com.qa.ninjatutorials.testcases.RegisterTest.verifyRegistrationWithAllFields(RegisterTest.java:88)
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.008 s - in TestSuite
