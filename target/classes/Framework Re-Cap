@@ -1,0 +1,39 @@
+Framework Re-Cap
+---------------------------
+
+1. Create an Archetype Maven Project
+2. Add the necessary dependencies in pom.xml file and update the Maven project.
+3. First understand the functionalities which you want to automate
+4. In our current project we are automating 3 functionalities Login, Register and Search of tutorialsninja.com/demo
+5. Created packages in src/test/java
+	5.1 > testcases
+	5.2 > testbase
+6. Created Classes in the Packages above
+	6.1 > testcases >> Logintest >> RegisterTest >> SearchTest
+	6.2 > testbase >> TestBase
+7. Created few packages in the src/main/java
+	7.1 config
+	7.2 testdata
+	7.3 utilities
+8. Classes created in the packages above
+	8.1 Utilities.java
+9. Created Properties files 
+	9.1 > config >> config.properties
+	9.2 > testdata >> testdata.properties
+10. In src/test/resources, we added the testng.xml file
+--------------------------------------------------------------
+
+What are the technical things which we did so far?
+
+1. Wrote the positive and negative test cases in the respective Test Classes using TestNG
+2. Designed the TestBase class and all the Classes were extending the TestBase Class
+3. Initialized the browser in the TestBase class
+4. Created the Constructor of the TestBase class and defined both the properties file in that constructor
+5. In Utilities.java class, created a method to generalize the DateTimeStamp especially for email id changes - 
+(input data changes)
+6. Made implicit and pageload time as public and final so that the hard-coding data in the TestBase class in removed
+7. In respective classes (ResgisterTest, LoginTest, SearchTest), created respective constructors of these classes. 
+They are all extending the TestBase class, so using the super() we could directly call the logic in the TestBase 
+class constructor
+8. Arranged the testng.xml file to execute the whole code
+9. Pushed into Github and created a job in Jenkins and ran it. 
